@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: monolith_to_microservices_udagram_frontend
+  name: monolith-to-microservices-udagram-frontend
   labels:
-    app: monolith_to_microservices_udagram_frontend
+    app: monolith-to-microservices-udagram-frontend
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: monolith_to_microservices_udagram_frontend
+      app: monolith-to-microservices-udagram-frontend
   template:
     metadata:
       labels:
-        app: monolith_to_microservices_udagram_frontend
+        app: monolith-to-microservices-udagram-frontend
     spec:
       containers:
-      - name: monolith_to_microservices_udagram_frontend
+      - name: monolith-to-microservices-udagram-frontend
         image: mhayes30125/monolith_to_microservices_udagram_frontend:latest
         ports:
         - containerPort: 80

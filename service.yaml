@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: monolith_to_microservices_udagram_frontend
+  name: monolith-to-microservices-udagram-frontend
   labels:
-    run: monolith_to_microservices_udagram_frontend
+    app: monolith-to-microservices-udagram-frontend
 spec:
   ports:
   - port: 80
     protocol: TCP
   selector:
-    run: monolith_to_microservices_udagram_frontend
+    app: monolith-to-microservices-udagram-frontend
