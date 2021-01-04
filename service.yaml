@@ -5,6 +5,7 @@ metadata:
   labels:
     app: monolith-to-microservices-udagram-frontend
 spec:
+  type: LoadBalancer
   ports:
   - port: 80
     protocol: TCP
